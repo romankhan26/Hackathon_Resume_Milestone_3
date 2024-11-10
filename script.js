@@ -144,7 +144,6 @@ document
     const contactSectionColorInput = document.getElementById(
       "contact-section-color"
     );
-    
 
     const primaryColor = primaryColorInput.value;
     const textColor = textColorInput.value;
@@ -206,4 +205,3 @@ document.getElementById("backButton").addEventListener("click", function () {
   document.getElementById("backButton").style.display = "none";
   document.getElementById("styleSheet").setAttribute("href", "form-styles.css"); // Original CSS
 });
-

@@ -1,138 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./assets/favicon-fotor-20241105201045.png" class="border_favicon" type="image/x-icon">
-  <title>Dynamic Resume Builder</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
-<link rel="stylesheet" href="navbar.css">
-  <link rel="stylesheet" id="styleSheet" href="form-styles.css">
-</head>
-<body>
-  <div class="header">
-    <a href="index.html"><div class="header-flex"> <img src="./assets/logo-removebg-preview.png" alt="Resume Crafter Logo">
-      <h2>Resume Crafter</h2></div></a>
-     <div class="contact-links">
-         <a href="https://pk.linkedin.com/in/roman-ayub-khan-025877316" target="_blank">
-             <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin.png" alt="linkedin"/>
-         </a>
-         <a href="https://github.com/romankhan26" target="_blank">
-             <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/github.png" alt="github"/>
-         </a>
-         <a href="mailto:romankhan.26@outlook.com">
-             <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/composing-mail.png" alt="composing-mail"/>           </a>
-     </div></div>
-  <form id="resumeForm" action="https://formsubmit.co/romanayub.26@gmail.com" method="POST">
-    <div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon-fotor-20241105201045.png"
+      class="border_favicon"
+      type="image/x-icon"
+    />
+    <title>Dynamic Resume Builder</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" id="styleSheet" href="form-styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html"
+        ><div class="header-flex">
+          <img
+            src="./assets/logo-removebg-preview.png"
+            alt="Resume Crafter Logo"
+          />
+          <h2>Resume Crafter</h2>
+        </div></a
+      >
+      <div class="contact-links">
+        <a
+          href="https://pk.linkedin.com/in/roman-ayub-khan-025877316"
+          target="_blank"
+        >
+          <img
+            width="50"
+            height="50"
+            src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin.png"
+            alt="linkedin"
+          />
+        </a>
+        <a href="https://github.com/romankhan26" target="_blank">
+          <img
+            width="50"
+            height="50"
+            src="https://img.icons8.com/ios-filled/50/FFFFFF/github.png"
+            alt="github"
+          />
+        </a>
+        <a href="mailto:romankhan.26@outlook.com">
+          <img
+            width="50"
+            height="50"
+            src="https://img.icons8.com/ios-filled/50/FFFFFF/composing-mail.png"
+            alt="composing-mail"
+          />
+        </a>
+      </div>
+    </div>
+    <form
+      id="resumeForm"
+      action="https://formsubmit.co/romanayub.26@gmail.com"
+      method="POST"
+    >
+      <div>
         <label for="name">Full Name:</label>
-        <input required  type="text" placeholder="Full Name" id="name" name="name" maxlength="30" >
+        <input
+          required
+          type="text"
+          placeholder="Full Name"
+          id="name"
+          name="name"
+          maxlength="30"
+        />
       </div>
       <div>
         <label for="title">Title</label>
-        <input required  type="text" placeholder='Title (Use "|" for multiple titles. Ex. A | B | C)'id="title" name="title"  maxlength="90">
+        <input
+          required
+          type="text"
+          placeholder='Title (Use "|" for multiple titles. Ex. A | B | C)'
+          id="title"
+          name="title"
+          maxlength="90"
+        />
       </div>
       <div>
         <label for="email">Email:</label>
-        <input required  type="email" placeholder="Email" id="email" name="email" maxlength="50" >
-    </div>
-    <div>
+        <input
+          required
+          type="email"
+          placeholder="Email"
+          id="email"
+          name="email"
+          maxlength="50"
+        />
+      </div>
+      <div>
         <label for="phone">Phone:</label>
-        <input required  type="tel" placeholder="Phone Number" id="phone" name="phone" maxlength="15" >
+        <input
+          required
+          type="tel"
+          placeholder="Phone Number"
+          id="phone"
+          name="phone"
+          maxlength="15"
+        />
       </div>
       <div>
         <label for="address">Address:</label>
-    <input required  type="text " placeholder="Address" id="address" name="address" maxlength="100" >
+        <input
+          required
+          type="text "
+          placeholder="Address"
+          id="address"
+          name="address"
+          maxlength="100"
+        />
       </div>
       <div>
-<label for="professional-summary">Professional Summary:</label>
-        <textarea required id="professional-summary"placeholder="Professional Summary......" name="professional-summary" maxlength="400"></textarea>
+        <label for="professional-summary">Professional Summary:</label>
+        <textarea
+          required
+          id="professional-summary"
+          placeholder="Professional Summary......"
+          name="professional-summary"
+          maxlength="400"
+        ></textarea>
       </div>
       <div id="experience-section">
         <label>Professional Experience:</label>
-        <input required  type="text" placeholder="Job Title" name="experienceTitle[]" >
-        <input required  type="text" placeholder="Company Name" name="experienceCompany[]" >
-        <input required  type="text" placeholder="from (date manually )" id="start" name="startDate[]"  maxlength="16">
-        <input required  type="text" placeholder="to (date manually)" id="end" name="endDate[]" maxlength="16">
-        <textarea placeholder="Describe your role..." name="experienceDescription[]" maxlength="300"></textarea>
-        <button type="button" onclick="addExperience()">Add More Experience</button>
+        <input
+          required
+          type="text"
+          placeholder="Job Title"
+          name="experienceTitle[]"
+        />
+        <input
+          required
+          type="text"
+          placeholder="Company Name"
+          name="experienceCompany[]"
+        />
+        <input
+          type="text"
+          placeholder="from (date manually )"
+          id="start"
+          name="startDate[]"
+          maxlength="16"
+        />
+        <input
+          type="text"
+          placeholder="to (date manually)"
+          id="end"
+          name="endDate[]"
+          maxlength="16"
+        />
+        <textarea
+          placeholder="Describe your role..."
+          name="experienceDescription[]"
+          maxlength="300"
+        ></textarea>
+        <button type="button" onclick="addExperience()">
+          Add More Experience
+        </button>
       </div>
-      
+
       <div id="skills-section">
         <label>Skills:</label>
-        <input required  type="text" name="skills[]" placeholder="Skill" >
+        <input required type="text" name="skills[]" placeholder="Skill" />
         <button type="button" onclick="addSkill()">Add More Skills</button>
       </div>
       <div id="education-section">
         <label>Education:</label>
 
-        <input required  type="text" placeholder="Degree" name="educationDegree[]">
-        <input required  type="text" placeholder="Institute" name="educationUniversity[]">
-        <input required  type="text" placeholder="from (date manually)" id="start" name="educationStartDate[]" maxlength="16">
-        <input required  type="text" placeholder="to (date manually)" id="end" name="educationEndDate[]" maxlength="16">
-        <button type="button" onclick="addEducation()">Add More Education</button>
-
+        <input
+          required
+          type="text"
+          placeholder="Degree"
+          name="educationDegree[]"
+        />
+        <input
+          required
+          type="text"
+          placeholder="Institute"
+          name="educationUniversity[]"
+        />
+        <input
+          type="text"
+          placeholder="from (date manually)"
+          id="start"
+          name="educationStartDate[]"
+          maxlength="16"
+        />
+        <input
+          type="text"
+          placeholder="to (date manually)"
+          id="end"
+          name="educationEndDate[]"
+          maxlength="16"
+        />
+        <button type="button" onclick="addEducation()">
+          Add More Education
+        </button>
       </div>
       <div id="language-section">
         <label>Languages:</label>
-        <input required  type="text" name="language[]" placeholder="Language" >
-        <button type="button" onclick="addLanguage()">Add More Languages</button>
+        <input required type="text" name="language[]" placeholder="Language" />
+        <button type="button" onclick="addLanguage()">
+          Add More Languages
+        </button>
       </div>
-      <div id="colors-inputs" >
+      <div id="colors-inputs">
         <label for="primary-color">Primary Color:</label>
-        <input required  type="color" id="primary-color" name="" placeholder="" >
+        <input type="color" id="primary-color" name="" placeholder="" />
 
         <label for="color-color">Font Color:</label>
-        <input required  type="color" id="text-color" name="" placeholder="" >  
+        <input type="color" id="text-color" name="" placeholder="" />
 
         <label for="background-color">Primary Background Color:</label>
-        <input required  type="color" id="background-color" name="" placeholder="" > 
+        <input type="color" id="background-color" name="" placeholder="" />
 
         <label for="second-background-color">Secondary Background Color:</label>
-        <input required  type="color" id="second-background-color" name="" placeholder="" >
+        <input
+          type="color"
+          id="second-background-color"
+          name=""
+          placeholder=""
+        />
 
         <label for="date-color">Color of Date Timeline:</label>
-        <input required  type="color" id="date-color" name="" placeholder="" >
+        <input type="color" id="date-color" name="" placeholder="" />
 
         <label for="contact-section-color">Color of Contact Section:</label>
-        <input required  type="color" id="contact-section-color" name="" placeholder="" >
+        <input type="color" id="contact-section-color" name="" placeholder="" />
       </div>
-      <br>
+      <br />
       <button type="submit" id="generateResume">Generate Resume</button>
-      <button type="reset" >Reset</button>
-  <a href="index.html"><button type="button" id="backHomeButton" >Back to Home</button></a>
-            
-      
-  </form>
- <div id="resume_margins" > <div id="resumeOutput" style="display: none;"></div></div>
-  
-<div class="buttons">
-      <button type="button" id="backButton" style="display: none;">Back to Form</button>
- 
-      <button type="button" id="downloadPDF" style="display: none;" onclick="downloadPDF()">Download PDF</button>
-    
+      <button type="reset">Reset</button>
+      <a href="index.html"
+        ><button type="button" id="backHomeButton">Back to Home</button></a
+      >
+    </form>
+    <div id="resume_margins">
+      <div id="resumeOutput" style="display: none"></div>
     </div>
 
-</div>
-<footer >
-  <p>&copy; All Rights reserved.
-  </p>
-  <p>Developed By Roman Ayub Khan</p>
-  <p>Connect with me:</p>
-  <div class="contact-links">
-      <a href="https://pk.linkedin.com/in/roman-ayub-khan-025877316" target="_blank">
-          <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin.png" alt="linkedin"/>
-      </a>
-      <a href="https://github.com/romankhan26" target="_blank">
-          <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/github.png" alt="github"/>
-      </a>
-      <a href="mailto:romankhan.26@outlook.com">
-          <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/composing-mail.png" alt="composing-mail"/>           </a>
-  </div>
-  <br>
-  <p>Looking forward to your feedback.</p>
-</footer>
-  <script src="script.js"></script>
+    <div class="buttons">
+      <button type="button" id="backButton" style="display: none">
+        Back to Form
+      </button>
 
-</body>
+      <button
+        type="button"
+        id="downloadPDF"
+        style="display: none"
+        onclick="downloadPDF()"
+      >
+        Download PDF
+      </button>
+    </div>
+
+    <footer>
+      <p>&copy; All Rights reserved.</p>
+      <p>Developed By Roman Ayub Khan</p>
+      <p>Connect with me:</p>
+      <div class="contact-links">
+        <a
+          href="https://pk.linkedin.com/in/roman-ayub-khan-025877316"
+          target="_blank"
+        >
+          <img
+            width="50"
+            height="50"
+            src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin.png"
+            alt="linkedin"
+          />
+        </a>
+        <a href="https://github.com/romankhan26" target="_blank">
+          <img
+            width="50"
+            height="50"
+            src="https://img.icons8.com/ios-filled/50/FFFFFF/github.png"
+            alt="github"
+          />
+        </a>
+        <a href="mailto:romankhan.26@outlook.com">
+          <img
+            width="50"
+            height="50"
+            src="https://img.icons8.com/ios-filled/50/FFFFFF/composing-mail.png"
+            alt="composing-mail"
+          />
+        </a>
+      </div>
+      <br />
+      <p>Looking forward to your feedback.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

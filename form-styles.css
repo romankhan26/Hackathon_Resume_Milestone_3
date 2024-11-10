@@ -4,84 +4,86 @@
   box-sizing: border-box;
 }
 
-
-body{
+body {
   height: 100%;
-
 }
 
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 3vw 2vw;
+  border-radius: 0.5rem;
+  box-shadow: -7px -7px 14px rgba(0, 0, 0, 0.634);
+  background: rgba(0, 0, 0, 0.13);
+  border: 0.75px solid rgba(255, 255, 255, 0.188);
+}
 
+form div {
+  margin-bottom: 15px;
+}
 
-  
-  form {
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 3vw 2vw;
-    border-radius: 0.5rem;
-    box-shadow: -7px -7px 14px rgba(0, 0, 0, 0.634);
-    background: rgba(0, 0, 0, 0.13);
-    border: 0.75px solid rgba(255, 255, 255, 0.188);
+label {
+  display: block;
+  color: #cccccc;
 
+  text-shadow: -3px 3px 4px rgb(0, 0, 0);
 
-  }
-  
+  font-weight: bold;
+}
+#colors-inputs label {
+  margin-top: 15px;
+}
 
-  
-  form div {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    color: #cccccc;
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  color: #fbfbfb;
+  border-color: #000000;
+  background-color: #020a22;
+  /* color: #fbfbfb; */
 
-    text-shadow:-3px 3px 4px rgb(0, 0, 0);
+  margin-top: 5px;
+}
+textarea {
+  border: 2px inset #000000;
+}
 
-    font-weight: bold;
-  }
-  #colors-inputs label {
-    margin-top: 15px;
-  }
-  
-  input, textarea  {
-    width: 100%;
-    padding: 8px;
-    color: #fbfbfb;
-    border-color: #000000;
-background-color: #020a22;
-/* color: #fbfbfb; */
-
-    margin-top: 5px;
-  }textarea {
-    border: 2px inset #000000;
-  }
-
-  button {
-    padding: 10px 20px;
-    width: 100%;
-    margin: 8px auto;
-    color: #cccccc;
-    border: none;
-    font-size: 1.02rem;
-    font-weight: bold;
-    border-radius: 1rem;
-    box-shadow: -7px 7px 5px rgba(0, 0, 0, 0.634);
-    border: 0.75px solid rgba(255, 255, 255, 0.188);
-    background-color: black;
-    background: linear-gradient(180deg,black 2%,rgba(8, 2, 28, 0.486), rgb(13, 41, 88) , rgb(0, 0, 0) 100%);
-    cursor: pointer;
+button {
+  padding: 10px 20px;
+  width: 100%;
+  margin: 8px auto;
+  color: #cccccc;
+  border: none;
+  font-size: 1.02rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  box-shadow: -7px 7px 5px rgba(0, 0, 0, 0.634);
+  border: 0.75px solid rgba(255, 255, 255, 0.188);
+  background-color: black;
+  background: linear-gradient(
+    180deg,
+    black 2%,
+    rgba(8, 2, 28, 0.486),
+    rgb(13, 41, 88),
+    rgb(0, 0, 0) 100%
+  );
+  cursor: pointer;
 }
 button:active {
   /* background-color: rgb(1, 0, 20); */
-  background: linear-gradient(180deg,rgba(0, 0, 0, 0.244) 2%,rgba(8, 2, 28, 0.288), rgba(13, 41, 88, 0.257) , rgba(0, 0, 0, 0.283) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.244) 2%,
+    rgba(8, 2, 28, 0.288),
+    rgba(13, 41, 88, 0.257),
+    rgba(0, 0, 0, 0.283) 100%
+  );
 
   background-image: none;
-} 
-input[type="color"]{
+}
+input[type="color"] {
   width: 100%;
   padding: 5px;
   margin-top: 5px;
 }
- 
-
-  
