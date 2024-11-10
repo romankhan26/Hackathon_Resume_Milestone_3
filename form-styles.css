@@ -83,15 +83,5 @@ input[type="color"]{
   margin-top: 5px;
 }
  
-@media (max-width: 768px) {
-  .header h2 {
-      font-size: 1.2rem;
-  }
-  .header img {
-      max-width: 60px; /* Smaller logo size for mobile */
-  }
-  form {
-    /* max-width: 500px; */
-  }
-}
+g
   
